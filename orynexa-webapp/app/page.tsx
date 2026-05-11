@@ -60,17 +60,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="orbit" aria-label="ORYNEXA orbit core visual">
-          <div className="orbitRing r1" />
-          <div className="orbitRing r2" />
-          <div className="orbitRing r3" />
-          <div className="xnexus" />
-          <div className="core" />
-          <div className="node n1">☀ SURYA ENERGY</div>
-          <div className="node n2">AUTOMATION</div>
-          <div className="node n3">GLOBAL IMPACT</div>
-          <div className="node n4">LEARNING</div>
-          <div className="node n5">TECHNOLOGY</div>
+        <div className="heroBannerWrap">
+          <img
+            src="/header-banner.jpg"
+            alt="ORYNEXA — From the Core"
+            className="heroBanner"
+          />
         </div>
       </section>
 
@@ -131,10 +126,11 @@ export default function Home() {
       <section id="founder" className="section">
         <div className="container founder">
           <div className="portrait">
-            <div>
-              <strong>Founder Portrait</strong>
-              <p>Place your professional edited photo here: /public/founder.jpg</p>
-            </div>
+            <img
+              src="/founder-ceo.jpg"
+              alt="Suman Suryabanshi — CEO & Founder of ORYNEXA"
+              className="founderImg"
+            />
           </div>
           <div>
             <div className="kicker">FOUNDER</div>
