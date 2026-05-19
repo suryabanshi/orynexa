@@ -7,7 +7,7 @@ const items = [
   ["Documents", "Knowledge base ready", FileText],
   ["Team", "Global operators", Users],
   ["Workflows", "Execution pipelines", ListChecks],
-  ["Network", "Japan / Nepal / Global", Network],
+  ["Network", "buffalonas.jp · Japan / Nepal / Global", Network],
 ];
 
 export default function Dashboard() {
