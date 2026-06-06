@@ -1,7 +1,7 @@
 
-import { BrainCircuit, BriefcaseBusiness, BookOpen, Globe2, LayoutDashboard, PlayCircle, Sparkles, Users } from "lucide-react";
+import { BrainCircuit, BriefcaseBusiness, BookOpen, Globe2, LayoutDashboard, PlayCircle, Sparkles, type LucideIcon } from "lucide-react";
 
-const services = [
+const services: [string, string, LucideIcon][] = [
   ["Business Systems", "End-to-end business management systems, dashboards, and workflow solutions.", BriefcaseBusiness],
   ["AI Automation", "AI agents, intelligent automation, and workflow intelligence for the future.", BrainCircuit],
   ["Learning Platforms", "Education systems for students, workers, entrepreneurs, and skill growth.", BookOpen],
@@ -10,7 +10,7 @@ const services = [
   ["Creative Media Systems", "Video, design, branding, and content systems that build meaningful digital impact.", PlayCircle],
 ];
 
-const subsystems = [
+const subsystems: [string, string, LucideIcon][] = [
   ["ORYNEXA OS", "Business operating system for teams and organizations.", LayoutDashboard],
   ["ORYNEXA AI", "AI agents and automation for smarter workflows.", BrainCircuit],
   ["ORYNEXA LEARN", "Learning management systems for all ages and skills.", BookOpen],
