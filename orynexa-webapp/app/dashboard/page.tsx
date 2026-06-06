@@ -1,7 +1,7 @@
 
-import { BrainCircuit, FileText, LayoutDashboard, ListChecks, Network, Users } from "lucide-react";
+import { BrainCircuit, FileText, LayoutDashboard, ListChecks, Network, Users, type LucideIcon } from "lucide-react";
 
-const items = [
+const items: [string, string, LucideIcon][] = [
   ["Projects", "12 active systems", LayoutDashboard],
   ["AI Tasks", "38 automated actions", BrainCircuit],
   ["Documents", "Knowledge base ready", FileText],
