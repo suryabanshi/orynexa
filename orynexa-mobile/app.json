@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "ORYNEXA",
+    "slug": "orynexa",
+    "scheme": "orynexa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#05070B",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.orynexa.app"
+    },
+    "android": {
+      "package": "com.orynexa.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#05070B",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#05070B"
+        }
+      ]
+    ]
+  }
+}
