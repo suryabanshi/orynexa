@@ -16,8 +16,12 @@ name: Run Datadog Synthetic tests
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - "orynexa-webapp/**"
   pull_request:
     branches: [ "main" ]
+    paths:
+      - "orynexa-webapp/**"
 
 jobs:
   build:
