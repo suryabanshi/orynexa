@@ -1,5 +1,5 @@
 
-import { BrainCircuit, BriefcaseBusiness, BookOpen, Globe2, LayoutDashboard, PlayCircle, Sparkles, Users } from "lucide-react";
+import { BrainCircuit, BriefcaseBusiness, BookOpen, Globe2, LayoutDashboard, PlayCircle, Sparkles, Users, Smartphone, BadgeJapaneseYen } from "lucide-react";
 
 const services = [
   ["Business Systems", "End-to-end business management systems, dashboards, and workflow solutions.", BriefcaseBusiness],
@@ -34,8 +34,9 @@ export default function Home() {
           <div className="links">
             <a href="#home">Home</a>
             <a href="#builds">Systems</a>
-            <a href="#layers">Layers</a>
             <a href="#subsystems">Subsystems</a>
+            <a href="/corporation">Corporation</a>
+            <a href="#pricing">Pricing</a>
             <a href="#founder">Founder</a>
           </div>
           <a className="btn" href="#contact">Start Building</a>
@@ -142,6 +143,54 @@ export default function Home() {
             <p className="quote">
               “Every strong future begins from a core: identity, discipline, knowledge, and execution.”
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" className="section">
+        <div className="container">
+          <div className="sectionTitle">SERVICES & <span>JPY PRICING</span></div>
+          <p className="lead" style={{textAlign:"center", margin:"0 auto 32px", maxWidth:560}}>
+            All services billed in Japanese Yen (JPY ¥). International invoicing available in USD or NPR.
+          </p>
+          <div className="grid">
+            {[
+              ["¥150,000", "/ mo", "Digital Consulting", "Strategy, systems architecture, and digital transformation advisory."],
+              ["¥300,000", "/ mo", "AI Automation", "AI agent design, workflow automation, and intelligent operations."],
+              ["¥500,000", "/ project", "Full System Build", "End-to-end platform development: web app, mobile, backend, and integrations."],
+              ["¥1,000,000+", "/ mo", "Enterprise Suite", "Custom ORYNEXA OS deployment with dedicated AI, learning, and support systems."],
+            ].map(([price, period, name, desc]) => (
+              <div className="card" key={name as string}>
+                <div style={{fontSize:28, fontWeight:800, color:"var(--gold)", letterSpacing:"-0.02em", lineHeight:1}}>
+                  {price}<span style={{fontSize:13, fontWeight:500, color:"var(--gray)", marginLeft:4}}>{period}</span>
+                </div>
+                <h3 style={{marginTop:10}}>{name}</h3>
+                <p>{desc}</p>
+                <a className="btn" href="mailto:info@orynexa.com" style={{display:"inline-block", marginTop:16, fontSize:13}}>Inquire</a>
+              </div>
+            ))}
+          </div>
+          <p style={{textAlign:"center", color:"var(--gray)", fontSize:13, marginTop:24}}>
+            Tax-exclusive pricing. Consumption tax (消費税 10%) applies for Japan-based clients. <a href="/corporation#pricing" style={{color:"var(--cyan)"}}>Full pricing details →</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="app" className="section">
+        <div className="container">
+          <div className="card" style={{textAlign:"center"}}>
+            <div className="icon" style={{margin:"0 auto 16px"}}><Smartphone size={28} /></div>
+            <h2>ORYNEXA Mobile App</h2>
+            <p className="lead" style={{maxWidth:480, margin:"0 auto 8px"}}>
+              Take ORYNEXA everywhere. Native iOS & Android app with dashboard, home, and Connect hub for linking your external tools.
+            </p>
+            <p style={{color:"var(--gray)", fontSize:13, marginBottom:24}}>
+              Expo · React Native · Beta — available now via direct download
+            </p>
+            <div className="actions" style={{justifyContent:"center"}}>
+              <a className="btn" href="/corporation#projects">View All Projects</a>
+              <a className="btn secondary" href="mailto:info@orynexa.com?subject=ORYNEXA App Access">Request App Access</a>
+            </div>
           </div>
         </div>
       </section>
